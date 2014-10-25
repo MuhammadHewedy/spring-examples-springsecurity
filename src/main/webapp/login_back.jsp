@@ -8,9 +8,11 @@
 </head>
 <body>
 
-<a href="../index.jsp">HOME</a>
-<br /><a href="../j_spring_security_logout">Logout</a>
 
-<h3>Admin</h3>
+You successfully logged out.
+
+<br />
+Come back again via <a href="login.jsp">Login</a>
+
 </body>
 </html>

@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<a href="../index.jsp">HOME</a>
+<br /><a href="../j_spring_security_logout">Logout</a>
 
 <h3>DBA</h3>
 </body>
