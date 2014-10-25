@@ -3,3 +3,6 @@
 
 
 <%Authentication authentication = SecurityContextHolder.getContext().getAuthentication();%>
+Hello <%=authentication.getName()%>
+
+<br/> <br/>

@@ -22,5 +22,7 @@
 	%>
 
 	<h3>Admin</h3>
+	
+	<a href="loggedIn/index.jsp">Click here if you logged In during this session</a>
 </body>
 </html>
