@@ -16,7 +16,6 @@
 		
 		<logout logout-success-url="/login_back.jsp"/>
 
-
 		<intercept-url pattern="/admin/**" access="ROLE_ADMIN" />
 		<intercept-url pattern="/dba/**" access="ROLE_DBA" />
 	</http>
