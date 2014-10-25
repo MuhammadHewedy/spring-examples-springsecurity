@@ -17,9 +17,12 @@
 
 		<logout logout-success-url="/login_back.jsp" />
 
+		<intercept-url pattern="/admin/loggedIn/**"
+			access="hasRole('ROLE_ADMIN') and not isRememberMe()" />
 		<intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
 		<intercept-url pattern="/dba/**" access="hasRole('ROLE_DBA')" />
-		<intercept-url pattern="/admin/loggedIn/**" access="isFullyAuthenticated('ROLE_ADMIN')"/>
+
+		<intercept-url pattern="/login.jsp" requires-channel="http" />
 	</http>
 
 	<authentication-manager>

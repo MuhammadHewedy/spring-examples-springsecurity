@@ -11,7 +11,6 @@
 
 
 	ACCESS DENIED
-	<a href="<%=request.getContextPath()%>/index.jsp">HOME</a>
 
 </body>
 </html>

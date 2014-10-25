@@ -9,9 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<a href="../index.jsp">HOME</a>
-
 	<%
 		if (!(authentication instanceof AnonymousAuthenticationToken)) {
 	%>
@@ -23,6 +20,8 @@
 
 	<h3>Admin</h3>
 	
-	<a href="loggedIn/index.jsp">Click here if you logged In during this session</a>
+	<security:authorize url="/admin/loggedIn/**">
+		<a href="loggedIn/index.jsp">Click here if you logged In during this session</a>
+	</security:authorize>
 </body>
 </html>

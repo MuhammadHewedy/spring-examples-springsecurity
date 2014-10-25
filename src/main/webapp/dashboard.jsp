@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<a href="index.jsp">HOME</a>
+
 	<%
 	if (!(authentication instanceof AnonymousAuthenticationToken)) {
 	%>

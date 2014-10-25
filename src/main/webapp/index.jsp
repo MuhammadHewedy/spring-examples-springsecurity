@@ -5,8 +5,8 @@
 	<h2>Hello World!</h2>
 
 
-	<a href="admin/index.jsp">Admin</a>
-	<a href="dba/index.jsp">DBA</a>
+	<a href="admin/index.jsp">Go to admin specific resources</a>
+	<a href="dba/index.jsp">Go to dba specific resources</a>
 
 	<%
 	if (!(authentication instanceof AnonymousAuthenticationToken)) {
