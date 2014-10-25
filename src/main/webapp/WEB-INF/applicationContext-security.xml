@@ -7,11 +7,11 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
 
-	<http>
+	<http access-denied-page="/access_denied.jsp" >
 
 		<form-login default-target-url="/dashboard.jsp" login-page="/login.jsp"
 			username-parameter="usernameTxt" password-parameter="passwordTxt"
-			authentication-failure-url="/login.jsp?error=Invalid username/password combination" />
+			authentication-failure-url="/login.jsp?error=Invalid username/password combination"/>
 		<remember-me />
 		
 		<logout logout-success-url="/login_back.jsp"/>
